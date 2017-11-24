@@ -15,6 +15,7 @@ npm i electron-chartjs
 ## Usage
 
 The only difference from `chart.js` constructor - you need to skeep context argument.
+
 Simple barchart:
 
 ```javascript
