@@ -14,7 +14,7 @@ function createWindow () {
 		slashes: true
 	}))
 
-	// workaround cause i didn't find appropriate event :(
+	// workaround cause I didn't find appropriate event :(
 	setTimeout(() => {
 		win.webContents.send('create chart', opts)
 	}, 500)
