@@ -37,6 +37,35 @@ will render window with barchart.
 
 For more charts check [chart.js docs](http://www.chartjs.org/docs/latest/)
 
+## Why?
+
+To reduce number of actions you need to perform for visualizing data from database, etc.
+
+No need to setup client + server to render some charts with js.
+
+Example:
+
+```javascript
+const usersByAge = await knex.raw(`
+	select age, count(age) as count
+	from users
+	group by age
+`)
+const labels = _.map(usersByAge, 'age')
+const data = _.map(usersByAge, 'count')
+chart({
+	type: 'bar',
+	data: {
+		labels,
+		datasets: [{
+			label: 'users by age',
+			backgroundColor: '#bada55',
+			data,
+		}],
+	},
+})
+```
+
 ## License
 
 MIT
