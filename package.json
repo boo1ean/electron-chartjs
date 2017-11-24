@@ -1,0 +1,22 @@
+{
+  "name": "electron-chartjs",
+  "version": "1.0.0",
+  "description": "Render chart.js charts using electron",
+  "main": "wrapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chart",
+    "chart.js",
+    "electron",
+    "plot",
+    "visual"
+  ],
+  "author": "Egor Gumenyuk <boo1ean0807@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "^2.7.1",
+    "electron": "^1.7.9"
+  }
+}
