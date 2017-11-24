@@ -39,7 +39,7 @@ For more charts check [chart.js docs](http://www.chartjs.org/docs/latest/)
 
 ## Why?
 
-To reduce number of actions you need to perform for visualizing data from database, etc.
+To reduce number of actions you need to perform for visualizing data from database using js.
 
 No need to setup client + server to render some charts with js.
 
